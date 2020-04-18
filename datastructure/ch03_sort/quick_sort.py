@@ -24,7 +24,7 @@ def partition(lyst, left, right):
                 break
             else:
                 left += 1
-    return left  # right
+    return left  # rightllst
 
 
 def quick_sort(lyst, left, right):
