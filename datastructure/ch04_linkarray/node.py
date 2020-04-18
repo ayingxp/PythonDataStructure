@@ -7,6 +7,11 @@ class Node(object):
     def __str__(self):
         return "<Node %r>" % self.data
 
+class TwoWayNode(Node):
+    def __init__(self, data, previous=None, next=None):
+        Node.__init__(self, data, next)
+        # super(TwoWayNode, self).__init__(data, next)
+        self.previous = previous
 
 
 
